@@ -55,13 +55,6 @@ public class GraphQLDataFetchers{
         };
     }
 
-    public Test tet(){
-        return map->{
-            map.put("2","2");
-return map;
-        };
-    }
-
     public DataFetcher getAuthorDataFetcher() {
         return dataFetchingEnvironment -> {
             Map<String,String> book = dataFetchingEnvironment.getSource();
